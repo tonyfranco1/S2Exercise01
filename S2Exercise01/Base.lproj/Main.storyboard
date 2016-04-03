@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="S2Exercise01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="tIg-un-Xmb">
+                                <rect key="frame" x="20" y="53" width="150" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictures" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-da-ueY">
+                                <rect key="frame" x="197" y="53" width="153" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zE-2O-RFp">
+                                <rect key="frame" x="140" y="336" width="95" height="30"/>
+                                <state key="normal" title="Headphone"/>
+                                <connections>
+                                    <action selector="musicOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ueo-4B-Kff"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-bH-FA7">
+                                <rect key="frame" x="148" y="391" width="79" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="pictureOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGf-42-wf0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-hH-ljp">
+                                <rect key="frame" x="111" y="460" width="152" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetImages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNA-MO-3qR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="camera" destination="zhs-bH-FA7" id="v5A-ll-sPY"/>
+                        <outlet property="headphone" destination="9zE-2O-RFp" id="Zkv-9c-3Xg"/>
+                        <outlet property="music" destination="tIg-un-Xmb" id="V22-Xy-poN"/>
+                        <outlet property="picture" destination="1mN-da-ueY" id="IQu-ni-wLf"/>
+                        <outlet property="reset" destination="AQm-hH-ljp" id="v8H-uu-IRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332.5" y="637.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music" width="128" height="128"/>
+        <image name="pictures" width="128" height="128"/>
+    </resources>
+</document>
